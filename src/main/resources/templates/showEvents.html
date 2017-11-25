@@ -7,8 +7,8 @@
 <body>
     <ul th:if="${events != null}">
     <li th:each="e : ${events}">
-        <span th:text="${e.id}">イベントのID</span>です。
-        <span th:text="${e.event_name}">イベント名</span>に住んでいます。
+        <span th:text="${e.id}">イベントのID</span>
+        <span th:text="${e.event_name}">イベント名</span>
     </li>
     </ul>
 </body>

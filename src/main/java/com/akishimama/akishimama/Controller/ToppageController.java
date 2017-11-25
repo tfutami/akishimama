@@ -16,8 +16,8 @@ public class ToppageController {
 
     @RequestMapping("/top")
     public String showEvents(Model model){
-        this.eventRepository.save(new Event(1, "event-1"));
-        model.addAttribute("events", this.eventRepository.findAll());
+        this.eventRepository.save(new Event(1L, "event-1"));
+        model.addAttribute("events", this.eventRepository.findOne(1L));
         return "showEvents";
     }
 }
