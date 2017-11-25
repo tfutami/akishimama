@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>akishimama</title>
+</head>
+<body>
+    <ul th:if="${events != null}">
+    <li th:each="e : ${events}">
+        <span th:text="${e.id}">イベントのID</span>です。
+        <span th:text="${e.event_name}">イベント名</span>に住んでいます。
+    </li>
+    </ul>
+</body>
+</html>
